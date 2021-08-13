@@ -140,10 +140,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode16.cpp" />
-    <ClCompile Include="Day1.cpp" />
+    <ClCompile Include="Day1Solver.cpp" />
+    <ClCompile Include="Day2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day1.h" />
+    <ClInclude Include="Day1Solver.h" />
+    <ClInclude Include="Day2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Day2Input.txt">
+      <DeploymentContent>true</DeploymentContent>
+      <FileType>Document</FileType>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </CopyFileToFolders>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

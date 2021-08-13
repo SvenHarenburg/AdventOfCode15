@@ -13,18 +13,44 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="InputFiles">
+      <UniqueIdentifier>{80132ddc-d08f-4cac-aa0b-bec6e3afc0e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Day1">
+      <UniqueIdentifier>{be6f4b19-90bd-4e85-83f1-b9c1900a3b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Day1">
+      <UniqueIdentifier>{7042c4f5-6f41-4d7f-a77b-34b280531a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Day2">
+      <UniqueIdentifier>{5a5d4f7e-560a-48d0-8a8a-f2916e973516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Day2">
+      <UniqueIdentifier>{7c951f75-e0fd-4971-b301-6c9167e3e77c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day1.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Day1Solver.cpp">
+      <Filter>Source Files\Day1</Filter>
+    </ClCompile>
+    <ClCompile Include="Day2.cpp">
+      <Filter>Source Files\Day2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day1.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Day2.h">
+      <Filter>Header Files\Day2</Filter>
     </ClInclude>
+    <ClInclude Include="Day1Solver.h">
+      <Filter>Header Files\Day1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Day2Input.txt">
+      <Filter>InputFiles</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

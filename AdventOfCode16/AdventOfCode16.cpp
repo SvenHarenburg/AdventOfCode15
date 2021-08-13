@@ -4,13 +4,15 @@
 #include <iostream>
 #include <string>
 
-#include "Day1.h"
+#include "Day1Solver.h"
+#include "Day2.h"
 
 int main()
 {	
-	day1::solve();
-
-	std::cout << "Done";
+	day1::Day1Solver day1Solver;
+	day1Solver.Solve();
+	//day1::solve();
+	//day2::solve();
 }
 
 
