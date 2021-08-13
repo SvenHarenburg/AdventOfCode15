@@ -36,12 +36,12 @@
     <ClCompile Include="Day1Solver.cpp">
       <Filter>Source Files\Day1</Filter>
     </ClCompile>
-    <ClCompile Include="Day2.cpp">
+    <ClCompile Include="Day2Solver.cpp">
       <Filter>Source Files\Day2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day2.h">
+    <ClInclude Include="Day2Solver.h">
       <Filter>Header Files\Day2</Filter>
     </ClInclude>
     <ClInclude Include="Day1Solver.h">

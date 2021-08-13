@@ -141,11 +141,11 @@
   <ItemGroup>
     <ClCompile Include="AdventOfCode16.cpp" />
     <ClCompile Include="Day1Solver.cpp" />
-    <ClCompile Include="Day2.cpp" />
+    <ClCompile Include="Day2Solver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1Solver.h" />
-    <ClInclude Include="Day2.h" />
+    <ClInclude Include="Day2Solver.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Day2Input.txt">

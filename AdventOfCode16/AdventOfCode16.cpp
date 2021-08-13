@@ -5,14 +5,29 @@
 #include <string>
 
 #include "Day1Solver.h"
-#include "Day2.h"
+#include "Day2Solver.h"
+
+
+#include <chrono>
+
+
 
 int main()
 {	
-	day1::Day1Solver day1Solver;
-	day1Solver.Solve();
-	//day1::solve();
-	//day2::solve();
+	std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
+
+	/*day1::Day1Solver day1Solver;
+	day1Solver.Solve();	*/
+
+	day2::Day2Solver day2Solver;
+	day2Solver.Solve();
+
+
+
+
+	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+	std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[µs]" << std::endl;
+	std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::nanoseconds> (end - begin).count() << "[ns]" << std::endl;
 }
 
 
