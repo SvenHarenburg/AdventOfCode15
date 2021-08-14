@@ -13,13 +13,16 @@ namespace day2 {
 		std::cout << "Starting to solve Day2\n";
 		std::vector<Box> boxes{ ReadInputFromFile(inputFileName) };
 
-		int totalWrappingPaperNeeded{ 0 };
+		int totalRequiredWrappingPaper{ 0 };
+		int totalRequiredRibbon{ 0 };
 		for (size_t i = 0; i < boxes.size(); i++)
 		{
-			totalWrappingPaperNeeded += getRequiredWrappingPaper(boxes[i]);
+			totalRequiredWrappingPaper += getRequiredWrappingPaper(boxes[i]);
+			totalRequiredRibbon += getRequiredRibbon(boxes[i]);
 		}
 
-		std::cout << "Total wrapping paper needed: " << totalWrappingPaperNeeded << "\n";
+		std::cout << "Total wrapping paper needed: " << totalRequiredWrappingPaper << "\n";
+		std::cout << "Total ribbon needed: " << totalRequiredRibbon << "\n";
 		std::cout << "Day2 solved.\n";
 	}
 
@@ -27,9 +30,33 @@ namespace day2 {
 		int side1 = box.length * box.width;
 		int side2 = box.width * box.height;
 		int side3 = box.height * box.length;
+
+		// Smallest side for the required overhead of wrapping paper:
 		int smallestSide = std::min({ side1, side2, side3 });
 
 		return (side1 * 2) + (side2 * 2) + (side3 * 2) + smallestSide;
+	}
+
+	int Day2Solver::getRequiredRibbon(Box box) {
+		/*
+			The ribbon required to wrap a present is the shortest distance around its sides, 
+			or the smallest perimeter of any one face. Each present also requires a bow made out of 
+			ribbon as well; the feet of ribbon required for the perfect bow is equal to the cubic feet 
+			of volume of the present. Don't ask how they tie the bow, though; they'll never tell.
+		*/
+
+		// Put length, height and width into an array and sort it in ascending order:
+		int arr[] = { box.length, box.height, box.width };
+		std::sort(std::begin(arr), std::end(arr));
+
+		// The first two numbers are now the smallest, take those and calculate the ribbon:
+		int requiredRibbon = (arr[0] * 2) + (arr[1] * 2);
+
+		// Calculate ribbon for the bow by calculating the volume:
+		int volume = box.length * box.height * box.width;
+		requiredRibbon += volume;
+
+		return requiredRibbon;
 	}
 
 	std::vector<Box> Day2Solver::ReadInputFromFile(std::string filePath) {

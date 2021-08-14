@@ -12,6 +12,7 @@ namespace day2 {
 	private:
 		std::vector<Box> ReadInputFromFile(std::string filePath);
 		int getRequiredWrappingPaper(Box box);
+		int getRequiredRibbon(Box box);
 
 	public:
 		void Solve();
