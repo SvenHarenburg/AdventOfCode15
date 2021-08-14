@@ -142,10 +142,12 @@
     <ClCompile Include="AdventOfCode16.cpp" />
     <ClCompile Include="Day1Solver.cpp" />
     <ClCompile Include="Day2Solver.cpp" />
+    <ClCompile Include="Day3Solver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1Solver.h" />
     <ClInclude Include="Day2Solver.h" />
+    <ClInclude Include="Day3Solver.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Day2Input.txt">
@@ -156,6 +158,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Day3Input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

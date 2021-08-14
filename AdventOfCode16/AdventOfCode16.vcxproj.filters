@@ -28,6 +28,12 @@
     <Filter Include="Header Files\Day2">
       <UniqueIdentifier>{7c951f75-e0fd-4971-b301-6c9167e3e77c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Day3">
+      <UniqueIdentifier>{38b527db-f671-4a45-8473-9abc665b9173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Day3">
+      <UniqueIdentifier>{50cdd3bf-3a2f-4372-b4c2-41ae72f0d279}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode16.cpp">
@@ -39,6 +45,9 @@
     <ClCompile Include="Day2Solver.cpp">
       <Filter>Source Files\Day2</Filter>
     </ClCompile>
+    <ClCompile Include="Day3Solver.cpp">
+      <Filter>Source Files\Day3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day2Solver.h">
@@ -47,10 +56,18 @@
     <ClInclude Include="Day1Solver.h">
       <Filter>Header Files\Day1</Filter>
     </ClInclude>
+    <ClInclude Include="Day3Solver.h">
+      <Filter>Header Files\Day3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Day2Input.txt">
       <Filter>InputFiles</Filter>
     </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Day3Input.txt">
+      <Filter>InputFiles</Filter>
+    </Text>
   </ItemGroup>
 </Project>

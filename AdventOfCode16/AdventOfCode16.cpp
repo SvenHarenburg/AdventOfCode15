@@ -6,11 +6,9 @@
 
 #include "Day1Solver.h"
 #include "Day2Solver.h"
-
+#include "Day3Solver.h"
 
 #include <chrono>
-
-
 
 int main()
 {	
@@ -19,10 +17,11 @@ int main()
 	/*day1::Day1Solver day1Solver;
 	day1Solver.Solve();	*/
 
-	day2::Day2Solver day2Solver;
-	day2Solver.Solve();
+	/*day2::Day2Solver day2Solver;
+	day2Solver.Solve();*/
 
-
+	day3::Day3Solver day3Solver;
+	day3Solver.Solve();
 
 
 	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
