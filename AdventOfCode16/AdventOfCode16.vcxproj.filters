@@ -34,6 +34,12 @@
     <Filter Include="Header Files\Day3">
       <UniqueIdentifier>{50cdd3bf-3a2f-4372-b4c2-41ae72f0d279}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Day4">
+      <UniqueIdentifier>{75375ed8-772e-43e7-9299-fff744bea0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Day4">
+      <UniqueIdentifier>{0720ff2b-e54b-41fa-868e-1d9b6d8cd6f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode16.cpp">
@@ -48,6 +54,9 @@
     <ClCompile Include="Day3Solver.cpp">
       <Filter>Source Files\Day3</Filter>
     </ClCompile>
+    <ClCompile Include="Day4Solver.cpp">
+      <Filter>Source Files\Day4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day2Solver.h">
@@ -58,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Day3Solver.h">
       <Filter>Header Files\Day3</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4Solver.h">
+      <Filter>Header Files\Day4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
