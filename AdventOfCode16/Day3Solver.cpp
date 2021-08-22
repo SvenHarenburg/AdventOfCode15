@@ -7,10 +7,7 @@
 #include "Day3Solver.h"
 
 namespace day3 {
-	const std::string inputFileName{ "Day3Input.txt" };
-
-	void Day3Solver::Solve() {
-		input = ReadInputFromFile(inputFileName);
+	void Day3Solver::Solve() {		
 		SolvePart1();
 		SolvePart2();
 	}
@@ -103,12 +100,5 @@ namespace day3 {
 			}
 		}
 		return alreadyVisited;
-	}
-
-	std::string Day3Solver::ReadInputFromFile(std::string filePath) {
-		std::ifstream stream(filePath);
-		std::stringstream buffer;
-		buffer << stream.rdbuf();
-		return buffer.str();
 	}
 }

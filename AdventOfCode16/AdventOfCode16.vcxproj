@@ -158,12 +158,14 @@
     <ClCompile Include="Day2Solver.cpp" />
     <ClCompile Include="Day3Solver.cpp" />
     <ClCompile Include="Day4Solver.cpp" />
+    <ClCompile Include="SolverBase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1Solver.h" />
     <ClInclude Include="Day2Solver.h" />
     <ClInclude Include="Day3Solver.h" />
     <ClInclude Include="Day4Solver.h" />
+    <ClInclude Include="SolverBase.h" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Day2Input.txt">
@@ -176,7 +178,7 @@
     </CopyFileToFolders>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day3Input.txt" />
+    <Text Include="Day3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
