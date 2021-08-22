@@ -10,12 +10,17 @@
 // https://biicode-docs.readthedocs.io/c++/examples/openssl.html
 namespace day4 {
 	void Day4Solver::Solve() {
+		std::cout << "Solving Day4\n";
+		
 		unsigned char digest[MD5_DIGEST_LENGTH]{};
 
-		int currentNumber = 0;
-		bool resultFound{ false };
+		int currentNumber{};		
+		bool part1Solved{ false };
+		bool part2Solved{ false };
+		int part1Result{};
+		int part2Result{};
 
-		while (!resultFound) {
+		while (!part1Solved || !part2Solved) {
 			std::string input = "ckczppom" + std::to_string(currentNumber);
 			MD5((unsigned char*)input.c_str(), input.length(), (unsigned char*)&digest);
 
@@ -31,14 +36,22 @@ namespace day4 {
 				&& mdString[2] == '0'
 				&& mdString[3] == '0'
 				&& mdString[4] == '0') {
-				resultFound = true;
+				if (!part1Solved) {
+					part1Result = currentNumber;
+					part1Solved = true;
+				}
+
+				if (mdString[5] == '0') {
+					part2Result = currentNumber;
+					part2Solved = true;
+					break;
+				}				
 			}
-			else {
-				++currentNumber;
-			}
+			++currentNumber;
 		}
 
-		std::cout << "Result: " << currentNumber << "\n";
+		std::cout << "Part1: " << part1Result << "\n";
+		std::cout << "Part2: " << part2Result << "\n";
 		std::cout << "Day4 solved.";
 	}
 }
