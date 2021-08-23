@@ -9,7 +9,7 @@
 #include "Day2Solver.h"
 #include "Day3Solver.h"
 #include "Day4Solver.h"
-
+#include "Day5Solver.h"
 
 int main()
 {	
@@ -21,11 +21,14 @@ int main()
 	/*day2::Day2Solver day2Solver;
 	day2Solver.Solve();*/
 
-	day3::Day3Solver day3Solver;
-	day3Solver.Solve();
+	/*day3::Day3Solver day3Solver;
+	day3Solver.Solve();*/
 
 	/*day4::Day4Solver day4Solver;
 	day4Solver.Solve();*/
+
+	day5::Day5Solver day5Solver;
+	day5Solver.Solve();
 
 	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
 	std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[µs]" << std::endl;

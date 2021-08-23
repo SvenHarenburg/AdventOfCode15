@@ -60,6 +60,9 @@
     <ClCompile Include="SolverBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day5Solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day2Solver.h">
@@ -77,6 +80,9 @@
     <ClInclude Include="SolverBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day5Solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Day2Input.txt">
@@ -85,6 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day3.txt">
+      <Filter>InputFiles</Filter>
+    </Text>
+    <Text Include="Day5.txt">
       <Filter>InputFiles</Filter>
     </Text>
   </ItemGroup>
